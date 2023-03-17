@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Simple Todo List</title>
+  </head>
+  <body class="lg:bg-black flex h-screen items-center justify-center">
+    <section
+      class="w-full h-screen lg:h-auto lg:w-11/12 bg-purple-700 md:rounded-lg"
+    >
+      <h1
+        class="text-3xl md:text-5xl bg-white mt-24 text-fuchsia-500 text-center py-2 heading"
+      >
+        Simple Todo List
+      </h1>
+      <div
+        class="my-8 bg-white px-4 sm:px-6 py-8 md:w-3/4 h-[60vh] lg:h-[55vh] lg:w-2/5 mx-auto rounded-lg"
+      >
+        <div class="flex items-center justify-between">
+          <input
+            type="text"
+            class="border-2 border-fuchsia-500 p-3 rounded-lg w-56 sm:w-80 md:w-[22.5rem] focus:outline-none"
+            placeholder="Enter todo"
+          />
+
+          <button
+            class="bg-purple-700 hover:bg-purple-500 text-white rounded-lg w-20 h-[3.2rem] add-todo focus:outline-none"
+          >
+            Add
+          </button>
+          <button
+            class="save-todo bg-purple-700 hover:bg-purple-500 text-white rounded-lg w-20 h-[3.2rem] focus:outline-none"
+          >
+            Save
+          </button>
+        </div>
+        <div class="mt-12 todos-container flex flex-col"></div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.heading {
+  font-family: 'Lato', sans-serif;
+}
+.empty-todo {
+  color: rgb(233 213 255);
+  height: 200px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-list {
+  height: 80%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+.todo-wrapper {
+  background-color: rgb(245 208 254);
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.icons {
+  display: flex;
+  grid-gap: 10px;
+}
